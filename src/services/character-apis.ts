@@ -19,5 +19,5 @@ export const getCharactersById = (id: string): Promise<Character[]> => {
     }
   })
     .then(res => res.json())
-    .then(json => json.docs);
+    .then(json => json.docs[0]);
 };
