@@ -1,11 +1,13 @@
 import { Character } from '../types/types';
-const url = process.env.REACT_APP_API_URL as string;
 
-export const getCharacters = async (): Promise<Character[]> => {
-  const res = await fetch(url);
-  const json = await res.json();
+const url: string = (process.env.ONE_APP_API_URL as string);
 
-  if (!res.ok) throw new Error('Something went wrong');
-
-  return json;
+export const getCharacters = (): Promise<Character[]> => {
+  return fetch('https://the-one-api.dev/v2/character', {
+    headers: {
+      'Authorization': `Bearer ${url}`
+    }
+  })
+    .then(res => res.json())
+    .then(json => json.docs);
 };

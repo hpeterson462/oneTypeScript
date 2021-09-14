@@ -1,5 +1,5 @@
 export interface Character {
-  id: string,
+  _id: string,
   race: string,
   gender: string,
   spouse: string,
@@ -8,6 +8,6 @@ export interface Character {
 }
 
 export interface ListCharacter {
-  id: string,
+  _id: string,
   name: string
 }

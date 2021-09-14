@@ -1,12 +1,11 @@
 {
-  "name": "my-app-name",
+  "name": "one",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
     "@types/node": "^12.20.24",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
@@ -42,6 +41,9 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.8"
+    "@types/react-router-dom": "^5.1.8",
+    "dotenv-webpack": "^7.0.3",
+    "ts-loader": "^9.2.5",
+    "webpack-typescript": "^0.5.6"
   }
 }
