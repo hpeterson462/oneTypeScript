@@ -8,7 +8,7 @@ const CharacterList: React.FC = () => {
 
   const characterItems = characters.map(character => (
     <li
-      key={`${character._id}`}
+      key={`${character.id}`}
     >
       <CharacterItem {...character} />
     </li>

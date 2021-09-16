@@ -4,7 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import { Home } from '../home/Home';
+import { Home } from '../pages/home/Home';
+import { DetailPage } from '../pages/detailPage/DetailPage';
 import './App.css';
 
 const App: React.FC = () => {
@@ -12,6 +13,7 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/detail:id' exact component={DetailPage} />
         <Route path='/' render={() => <div>404</div>} />
       </Switch>
     </Router>

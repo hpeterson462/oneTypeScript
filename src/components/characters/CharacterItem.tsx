@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface Props {
-  _id: string,
+  id: string,
   name: string
 }
 
-const CharacterItem: React.FC<Props> = ({ _id, name }) => {
+const CharacterItem: React.FC<Props> = ({ id, name }) => {
   return (
-    <Link to={`/detail/${_id}`}>
+    <Link to={`/detail/${id}`}>
       <h3>{name}</h3>
     </Link>
   );

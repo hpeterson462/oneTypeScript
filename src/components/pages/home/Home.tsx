@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Navbar from '../../nav/Navbar';
-import CharacterList from '../characters/CharacterList';
+import CharacterList from '../../characters/CharacterList';
 import './Home.css';
 
 export const Home: React.FC = () => {
