@@ -24,6 +24,8 @@ export const useSingleCharacter = () => {
   const [singleCharacter, setSingleCharacter] = useState<Character>();
 
   const { id } = useParams<{ id: string }>();
+  console.log('params', id);
+
 
   useEffect(() => {
     getCharactersById(id)

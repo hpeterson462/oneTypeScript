@@ -4,7 +4,6 @@ import CharacterList from '../../characters/CharacterList';
 import './Home.css';
 
 export const Home: React.FC = () => {
-
   return (
     <>
       <Navbar />

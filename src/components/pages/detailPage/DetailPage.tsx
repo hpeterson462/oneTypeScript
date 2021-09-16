@@ -6,5 +6,5 @@ export const DetailPage: React.FC = () => {
     <div>
       <CharacterDetail />
     </div>
-  )
-}
+  );
+};

@@ -13,7 +13,7 @@ const CharacterDetail: React.FC = () => {
   return (
     <section>
       <button onClick={() => history.push('/')}>Home</button>
-      <h1>{`name: ${name}`}</h1>
+      <h1>{'character.name'}</h1>
       <h2>{`race: ${race}`}</h2>
       <h2>{`gender: ${gender}`}</h2>
       <h2>{`spouse: ${spouse}`}</h2>

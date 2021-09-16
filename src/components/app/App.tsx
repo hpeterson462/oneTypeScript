@@ -13,7 +13,7 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/detail:id' exact component={DetailPage} />
+        <Route path='/detail/:id' exact component={DetailPage} />
         <Route path='/' render={() => <div>404</div>} />
       </Switch>
     </Router>
